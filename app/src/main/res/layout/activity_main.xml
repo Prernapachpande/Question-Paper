@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+   <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+   <ImageView
+       android:id="@+id/section2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/section2"
+       android:scaleType="fitXY"/>
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/logo"
+       android:layout_marginTop="-147dp"
+       android:src="@drawable/mask" />
+
+      <ImageView
+          android:id="@+id/logo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/section2"
+          android:layout_centerVertical="true"
+          android:layout_marginTop="-128dp"
+          android:src="@drawable/logo" />
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/logo"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginRight="30dp"
+       android:src="@drawable/title"
+       android:id="@+id/title"/>
+
+   <ImageView
+       android:id="@+id/rect2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:src="@drawable/rectangle2"
+       android:layout_below="@+id/title"/>
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="70dp"
+          android:layout_below="@id/title"
+          android:layout_alignLeft="@id/rect2"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="23dp"
+          android:background="@drawable/jeemain"
+          android:padding="10dp"
+          android:src="@drawable/up"
+          android:id="@+id/img1"/>
+
+      <TextView
+          android:id="@+id/jee"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="JEE Mains"
+          android:textSize="20sp"
+          android:layout_alignLeft="@+id/rect2"
+          android:layout_marginLeft="88dp"
+          android:layout_marginTop="13dp"
+          android:layout_alignTop="@+id/rect2"
+          android:fontFamily="serif-monospace"
+          android:textColor="#000000"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:id="@+id/quest"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/jee"
+          android:layout_alignBottom="@+id/rect2"
+          android:layout_toRightOf="@+id/img1"
+          android:layout_marginLeft="12dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="3dp"
+          android:fontFamily="serif-monospace"
+          android:text="@string/original_question_papers_answers"
+          android:textSize="8sp" />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/title"
+          android:layout_alignRight="@id/rect2"
+          android:layout_marginTop="35dp"
+          android:layout_marginRight="8dp"
+          android:src="@drawable/jeeup" />
+
+      <ImageView
+          android:id="@+id/rect3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:src="@drawable/rectanglecopy"
+          android:layout_below="@id/rect2"/>
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="70dp"
+          android:layout_below="@id/rect2"
+          android:layout_alignLeft="@id/rect3"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="23dp"
+          android:background="@drawable/jeeadv"
+          android:src="@drawable/ladder"
+          android:padding="10dp"
+          android:id="@+id/img2"/>
+
+      <TextView
+          android:id="@+id/jeeadv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@id/rect3"
+          android:layout_marginLeft="88dp"
+          android:layout_marginTop="13dp"
+          android:textSize="20sp"
+          android:text="JEE Advanced"
+          android:fontFamily="serif-monospace"
+          android:textColor="#000000"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:id="@+id/free"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/jeeadv"
+          android:layout_alignBottom="@+id/rect3"
+          android:layout_marginLeft="12dp"
+          android:layout_toRightOf="@+id/img2"
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="3dp"
+          android:fontFamily="serif-monospace"
+          android:text="Free Question Papers"
+          android:textSize="10sp" />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@id/rect3"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="8dp"
+          android:src="@drawable/iphone8"
+          android:layout_below="@id/rect2"/>
+
+   <ImageView
+       android:id="@+id/rect4"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:src="@drawable/rectanglecopy2"
+       android:layout_below="@id/rect3"/>
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="70dp"
+          android:layout_below="@id/rect3"
+          android:layout_alignLeft="@id/rect4"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="23dp"
+          android:background="@drawable/mhtround"
+          android:padding="10dp"
+          android:src="@drawable/questionsaboutabecedary"
+          android:id="@+id/img3"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@id/rect4"
+       android:layout_marginLeft="88dp"
+       android:layout_marginTop="13dp"
+       android:id="@+id/mht"
+       android:textSize="20sp"
+       android:text="MHT_CET"
+       android:fontFamily="serif-monospace"
+       android:textColor="#000000"
+       android:textStyle="bold"/>
+
+   <TextView
+       android:id="@+id/past"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/mht"
+       android:layout_alignBottom="@+id/rect4"
+       android:layout_marginLeft="12dp"
+       android:layout_toRightOf="@+id/img3"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="3dp"
+       android:fontFamily="serif-monospace"
+       android:text="@string/past_year_papers_solutions"
+       android:textSize="10sp" />
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@id/rect4"
+       android:layout_marginTop="35dp"
+       android:layout_marginRight="8dp"
+       android:src="@drawable/cetlogo"
+       android:layout_below="@id/rect3"/>
+   <ImageView
+       android:id="@+id/rect5"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:src="@drawable/rectanglecopy3"
+       android:layout_below="@id/rect4"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@id/rect5"
+       android:layout_marginLeft="88dp"
+       android:layout_marginTop="13dp"
+       android:id="@+id/neet"
+       android:textSize="20sp"
+       android:text="NEET"
+       android:fontFamily="serif-monospace"
+       android:textColor="#000000"
+       android:textStyle="bold"/>
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="70dp"
+          android:layout_below="@id/rect4"
+          android:layout_alignLeft="@id/rect5"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="23dp"
+          android:src="@drawable/dna"
+          android:padding="10dp"
+          android:background="@drawable/neetround"
+          android:id="@+id/img4"/>
+   <TextView
+       android:id="@+id/latest"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/neet"
+       android:layout_alignBottom="@+id/rect5"
+       android:layout_marginLeft="12dp"
+       android:layout_toRightOf="@+id/img4"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="3dp"
+       android:fontFamily="serif-monospace"
+       android:text="Latest Question papers available"
+       android:textSize="10sp"/>
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@id/rect5"
+       android:layout_marginTop="35dp"
+       android:layout_marginRight="8dp"
+       android:src="@drawable/dnaslice"
+       android:layout_below="@id/rect4"/>
+   </RelativeLayout>
+</ScrollView>
